@@ -1,0 +1,3 @@
+I have completed a good section of my home page and almost all of my projects page
+
+I have images of my work, css hover effects and Iframes for youtube embeds
