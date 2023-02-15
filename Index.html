@@ -1,22 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
         <title>My Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='style.css'>
+        
     </head>
     <body>
-        <h1>Welcome to my Portfolio!</h1>
-        <hr width = "100%" color = "steelblue">
-        
-        <p>My Name is Brady Williamson. I have a very particular set of skills, the main skill is not being good at any specific thing, but I would say I'm ok at a lot of things and I have a forgettable charm about me. The purpose of this website is to inform the lovely folks at home about what I can by showing it off in all its glory. If you're wondering I look kind of like this.</p>
-        <img src="https://cdn.discordapp.com/attachments/543917385346973699/873453533142343750/unknown.png" alt="This is me!">
-        <hr width = "100%" color = "green">
-        
-        
-        <p>This is where I would put my stuff, if I felt like it. <br> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <hr color = "yellow">
+        <div class = "tab">
+            <button class= "tablinks" onclick= "openTab(event, 'Home')" id="defaultOpen"> Home</button>
+            <button class= "tablinks" onclick= "openTab(event, 'Projects')"> Projects</button>
+            <button class= "tablinks" onclick= "openTab(event, 'About Me')"> About Me</button>
 
-        <a href="https://www.linkedin.com/in/brady-williamson-493b05175/">My Linkedin page</a><br>
-        <a href="mailto:bradywilliamson@u.boisestate.edu">My Student Email</a>
+        </div>
+
+        <div id = "Home" class= "tabcontent" >
+            <h1>Welcome to my Portfolio!</h1>
+            
+            <hr width = 100% color = "steelblue"> 
+
+            <div class = row>
+                <div class = "col-md-6">
+                    <p>My name is Brady Williamson. I would love to make a positive change in the world through creative ideas and practical decision making. 
+                        I'm probably a lot better at things than I believe I am and that’s ok, it adds to my forgettable charm. The purpose of sharing my work with you lovely folks at home is to show off everything I have done in all its glory.
+                    </p>
+                </div>
+
+                <div class = "col-md-6">
+                    <img src="Artifacts/Brady.JPG" alt="This is me!">
+                </div>
+            </div>
+
+            <hr width = "100%" color = "green">
+        
+        </div>
+        
+        <div id = "Projects" class= "tabcontent" > 
+            
+            <p>This is where I show off a lot of my favorite projects. <br> 
+            
+            <div id = "Animation">
+                <div class = 'row'>
+                    <h1>Animation</h1>
+
+                    <div class = "col-md-6">
+                        <div id = "video"> 
+                            <iframe class = "responsive-iframe" src= "https://www.youtube.com/embed/Qq5BcpgBt0w" allowfullscreen></iframe>  
+                        </div>        
+                    </div>
+
+                    <div class = "col-md-6">
+                        <div id = "video"> 
+                            <iframe class = "responsive-iframe" src= "https://www.youtube.com/embed/nztzMcfG710" allowfullscreen></iframe>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+                
+            <div id = "Digital Art">
+                <div class = 'row'>
+                    <h1> Digital Art</h1>
+                    <div class = "col-md-6">
+                        <img src="Artifacts/dragonAscentCover.png" alt = "Digital Art cover for an interactive Comic">
+                    </div>
+                    <div class = "col-md-6">
+                        <img src="Artifacts/dragonAscentPush.png" alt = "Digital Art of the main character pushing somthing in the interactive Comic">
+                        <img src="Artifacts/dragonAscentRearView.png" alt = "Digital Art of the main character from behind in the interactive Comic">
+                        <img src="Artifacts/dragonAscentVillager.png" alt = "Digital Art of a background character for the interactive Comic">
+                    </div>
+                </div>
+
+                <div class = 'row'>
+                    <div class = "col-md-7">
+                        <img src="Artifacts/A grievous portrait.PNG" alt = "Digital art of General Grevious from Star Wars">
+                    </div>
+                    <div class = "col-md-5">
+                        <img src="Artifacts/Many faces while drinking.png" alt = "Digital art of a character displaying several emotions">
+                        <img src="Artifacts/Weird Beluga.PNG" alt = "Digital art of a strange beluga whale">
+                    </div>
+                </div>
+            </div>
+
+            <div id = "Arduino">
+                <div class = 'row'>
+                    <h1>Arduino</h1>
+                    <div class = "col-md-12">
+                        <img src = "Artifacts/MUKS DAYT.png" alt = "An arduino to replace malfunctioning keyboard keys">
+                    </div>
+                </div>
+            </div>
+
+            <div id = "Game Projects">
+                <h1> Game Projects</h1>
+                <div class = 'row'>
+                    <div class = "col-md-12">
+                        110 Final Game
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = "col-md-12">
+                       290 Game Demo diorama
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = "col-md-12">
+                        350 Game Demo
+                    </div>
+                </div>
+            </div>
+            
+           
+            <hr color = "yellow">
+        
+        </div>
+
+        <div id = "About Me" class= "tabcontent" > 
+            
+            <a href="https://www.linkedin.com/in/brady-williamson-493b05175/">My Linkedin page</a><br>
+            <a href="mailto:bradywilliamson@u.boisestate.edu">My Student Email</a> <br>
+            <a href="mailto:bradyw2799@gmail.com">My Personal Email</a>
+        
+        </div>
+
     </body>
+
+    <script>
+        
+        document.getElementById("defaultOpen").click();
+        
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </html>
