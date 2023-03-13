@@ -4,9 +4,9 @@
 }
 
 /* For mobile phones: */
-[class*="col-"] {
+/* [class*="col-"] {
     width: 100%;
-}
+} */
  
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -27,9 +27,7 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-}
-.row {
-    background-color: #940786;
+    border: 1px solid steelblue;
 }
 
 .row::after {
@@ -38,29 +36,9 @@
     display: table;
 }
 
-/** Image - https://www.w3schools.com/css/css_rwd_grid.asp **/   
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
-.overflow {
-    overflow-x:auto;
-}
-
-.tab{
-    float: left;
-    border: 1px solid #ccc;
-    background-color:#3ad606;
-    width: 15%;
-    height: 100vh;
-}
-
-.tab button{
-    display: block;
-    background-color: inherit;
-    color: black;
+.tablinks{
+    background-color: steelblue;
+    color: rgb(210, 214, 7);
     padding: 30px 16px;
     width: 100%;
     border: none;
@@ -69,22 +47,26 @@ img {
     cursor: pointer;
     transition: .3s;
 }
-
-.tab button:hover{
-    background-color: #ddd;
+.tablinks:hover{
+    color: aqua;
+    background-color: rgb(130, 12, 141);
+}
+.tablinks :active{
+    color: rgb(2, 175, 175);
+    background-color: rgb(86, 8, 94);
 }
 
-.tab button.active{
-    background-color: #ccc;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overflow {
+    overflow-x:auto;
 }
 
 .tabcontent {
     float: left;
-    padding: 6px 12px;
-    /* border: 1px solid #ccc; */
-    width: 70%;
-    border-left: none;
-    height: 300px;
     background-color: #940786;
 }
 
@@ -101,14 +83,18 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 300px;
+    width: 75%;
+    height: 100%;
     border: none;
 }
 
 body{
-    color: #F4F1E2 !important;
-    font-family: serif !important;
-    font-size: 15pt !important;
-    background-color: #940786 !important;
+    color: #F4F1E2 ;
+    font-family: serif ; 
+    font-size: 15pt ;
+    background-color: #940786 ;
+}
+
+#navigationbackground{
+    background-color: steelblue;
 }
