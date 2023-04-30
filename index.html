@@ -19,78 +19,107 @@
             <div class="col-md-3" id="navigationbackground">
                 <h1> My Portfolio</h1>
                 <ul class="list-unstyled">
-                    <li> <button class="tablinks" onclick="openTab(event, 'Home')" > Home</button> </li>
-                    <li> <button class="tablinks" onclick="openTab(event, 'Projects')"id="defaultOpen"> Projects</button> </li>
-                    <li> <button class="tablinks" onclick="openTab(event, 'About Me')"> About Me</button> </li>
+                    <li> <button class="tablinks" onclick="openTab(event, 'Home')"> Home</button> </li>
+                    <li> <button class="tablinks" onclick="openTab(event, 'Projects')"
+                            id="defaultOpen">Projects</button> </li>
+                    <li> <button class="tablinks" onclick="openTab(event, 'About Me')"> About
+                            Me</button> </li>
                 </ul>
             </div>
 
 
             <div class="col-md-9">
-                <!-- <section id="Home"> -->
                 <div id="Home" class="tabcontent">
                     <div class="container-fluid">
-
-                        <h1>Welcome to my Portfolio!</h1>
-
-                        <hr width=100% color="steelblue">
-
                         <div class=row>
-                            <div class="col-md-12">
-                                <p>My name is Brady Williamson. I would love to make a positive change in the world
-                                    through creative
-                                    ideas and practical decision making.
-                                    I'm probably a lot better at things than I believe I am and that’s ok, it adds to my
-                                    forgettable
-                                    charm. The purpose of sharing my work with you lovely folks at home is to show off
-                                    everything I
-                                    have done in all its glory.
-                                </p>
-                            </div>
+                            
                         </div>
+
                         <div class="col-md-12">
                             <img src="Artifacts/Brady.JPG" alt="This is me!">
                         </div>
                     </div>
                 </div>
-                <!-- </section> -->
 
 
                 <div id="Projects" class="tabcontent">
-                    <div class="container">
+                    <div class="container-fluid">
                         <h1> My Projects! </h1>
-                        <div id="rocksAgainstDarkness">
-                            <h2> Rocks Against Darkness </h2>
-                            <div class='row'>
+                        <div class=row>
+                            <div class="col-md-12">
+                                <h2> Rocks Against Darkness </h2>
+                                <p> Rocks Against Darkness is an ongoing Unity virtual reality project. This project is my
+                                    pride and joy.
+                                    I've built this from from the ground up, learning about how to program and design for VR
+                                    as well as how to manage a larger
+                                    scale project on my own. Its grown from an abstracted, moving diorama to a small world
+                                    with simple interactions.
+                                    Its not finished yet but I can't wait to show off the final product. </p>
+                            </div>
+                        </div>
+                            <div class=row>
                                 <div class="col-md-12">
-                                    Rocks Against Darkness Early Demo
-                                    <img src="Artifacts/RAD Rock Holding.png" alt="Rocks Against Darkness Early Demo">
+                                    <h2> Rocks Against Darkness Demo </h2>
+                                    <img src="Artifacts/RAD Rock Holding Updated.png" alt="Rocks Against Darkness Demo">
                                 </div>
                             </div>
-                                <div class="col-md-12">
-                                    Rocks Against Darkness Diorama
+
+                            <div class=row>
+                                <div class="col-md-6">
+                                    <h2> Rocks Against Darkness Early Demo </h2>
+                                    <img src="Artifacts/RAD Rock Holding.png" alt="Rocks Against Darkness Early Demo">
+                                </div>
+                                <div class="col-md-6">
+                                    <h2> Rocks Against Darkness Diorama </h2>
                                     <img src="Artifacts/RAD Diorama.png" alt="Rocks Against Darkness Diorama">
                                 </div>
-                            <div class='row'>
-                                <div class="col-md-12">
-                                    Display Case
+                            </div>
+
+                            <div class=row>
+                                <div class="col-md-6">
+                                    <h2> Display Case </h2>
                                     <img src="Artifacts/DisplayCaseWithTexture.png" alt="My Display Case with texture">
+                                </div>
+                                <div class="col-md-6">
                                     <video width="320" height="240" controls>
-                                        <source src="Artifacts/playblast_Williamson.avi" type="video/avi">
+                                        <source src="Artifacts/playblast_Williamson.mp4" type="video/mp4">
                                     </video>
                                 </div>
                             </div>
-                        </div>
-                        <div class='row'>
-                            <div class="col-md-12">
-                                Welcome to Greentide
-                                <img src="Artifacts/Welcome To GreenTide Neutral.png">
-                                <img src="Artifacts/Welcome To GreenTide Variation.png">
-                                <img src="Artifacts/Welcome To GreenTide Variation.png">
+
+                            <div class=row>
+                                <div class="col-md-6">
+                                    <video width="320" height="240" controls>
+                                        <source src="Artifacts/Walking.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col-md-6">
+                                    <video width="320" height="240" controls>
+                                        <source src="Artifacts/GardenRockTextured.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            
+
+                        <div id="welcomeToGreentide">
+                            <div class='row'>
+                                <div class="col-md-12">
+                                    <h2> Welcome to Greentide </h2>
+                                    <p> In welcome to Greentide you manage an augmented reality city spawned off a
+                                        marker.
+                                        Playing the game means keeping your resources in balance by choosing between
+                                        different presented props.
+                                        I was responsible for creating our resource management system, and ensuring that
+                                        it
+                                        would interact seamlessly with our event system and the prompts it provided.
+                                        This system also handled the win and lose conditions as well as prompting the
+                                        visible changes in game state.</p>
+                                    <img src="Artifacts/Welcome To GreenTide Neutral.png">
+                                    <img src="Artifacts/Welcome To GreenTide Variation.png">
+                                    <img src="Artifacts/Welcome To GreenTide Variation.png">
+                                </div>
                             </div>
                         </div>
-
-
                         <div id="Animation">
                             <div class='row'>
                                 <h1>Animation</h1>
@@ -111,39 +140,50 @@
                             </div>
                         </div>
                         <div id="Digital Art">
-                            <div class='row'>
-                                <h1> Digital Art</h1>
-                                <div class="col-6">
-                                    <img src="Artifacts/dragonAscentCover.png"
-                                        alt="Digital Art cover for an interactive Comic">
-                                </div>
-                                <div class="col-6">
-                                    <img src="Artifacts/dragonAscentPush.png"
-                                        alt="Digital Art of the main character pushing somthing in the interactive Comic">
-                                    <img src="Artifacts/dragonAscentRearView.png"
-                                        alt="Digital Art of the main character from behind in the interactive Comic">
-                                    <img src="Artifacts/dragonAscentVillager.png"
-                                        alt="Digital Art of a background character for the interactive Comic">
+                            <div id="dragonAscent">
+                                <div class='row'>
+                                    <h2> Digital Art</h2>
+                                    <p> Dragon Ascent is an interative comic about our hero discovering the reality of
+                                        the dragon while we were exploring the subject of "the universe in an illusion
+                                        in our brain."
+                                        <br> For this project I was the primary character artist as well as creating
+                                        several key panels
+                                    </p>
+                                    <div class="col-6">
+                                        <img src="Artifacts/dragonAscentCover.png"
+                                            alt="Digital Art cover for an interactive Comic">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="Artifacts/dragonAscentPush.png"
+                                            alt="Digital Art of the main character pushing somthing in the interactive Comic">
+                                        <img src="Artifacts/dragonAscentRearView.png"
+                                            alt="Digital Art of the main character from behind in the interactive Comic">
+                                        <img src="Artifacts/dragonAscentVillager.png"
+                                            alt="Digital Art of a background character for the interactive Comic">
+                                    </div>
                                 </div>
                             </div>
-
                             <div class='row'>
-                                <div class="col-7">
+                                <div class="col-4">
                                     <img src="Artifacts/A grievous portrait.PNG"
                                         alt="Digital art of General Grevious from Star Wars">
                                 </div>
-                                <div class="col-5">
-                                    <img src="Artifacts/Many faces while drinking.png"
-                                        alt="Digital art of a character displaying several emotions">
+                                <div class="col-4">
                                     <img src="Artifacts/Weird Beluga.PNG" alt="Digital art of a strange beluga whale">
                                 </div>
+                                <div class="col-4">
+                                    <img src="Artifacts/Many faces while drinking.png"
+                                        alt="Digital art of a character displaying several emotions">
+                                </div>
+                                <p> These are just some extra drawings I had some fun making</p>
                             </div>
                         </div>
-
                         <div id="Arduino">
                             <div class='row'>
-                                <h1>Arduino</h1>
                                 <div class="col-md-12">
+                                    <h1>Arduino</h1>
+                                    <p>This project was to solve a problem using arduinos. I was having a problem with
+                                        my keyboard so I designed this arduino to act as an interim keyboard </p>
                                     <img src="Artifacts/MUKS DAYT.png"
                                         alt="An arduino to replace malfunctioning keyboard keys">
                                 </div>
@@ -163,57 +203,71 @@
                                 </div>
                             </div> -->
 
-                        </div>
                     </div>
                 </div>
 
                 <div id="About Me" class="tabcontent">
-                    <div class="container text-center">
+                    <div class="container-fluid">
+                        <div class=row>
+                            <div class="col-md-12">
+                                <h1> Who is Brady Williamson? </h1>                        
+
+                                <p>My name is Brady Williamson. I would love to make a positive change in the world
+                                    through creative
+                                    ideas and practical decision making.
+                                    I'm probably a lot better at things than I believe I am and that’s ok, it adds to my
+                                    forgettable
+                                    charm. The purpose of sharing my work with you lovely folks at home is to show off
+                                    everything I
+                                    have done in all its glory.
+                                </p>
+                            </div>
+                        </div>
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="https://www.linkedin.com/in/brady-l-williamson/">My Linkedin</a>
                             </div>
-
                             <div class="col-4">
                                 <a href="mailto:bradyw2799@gmail.com">Primary Email</a>
                             </div>
-
                             <div class="col-4">
                                 <a href="mailto:bradywilliamson@u.boisestate.edu">Secondary Email</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
     </div>
 
 
 
 
+    <script>
 
+        document.getElementById("defaultOpen").click();
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 
-<script>
-
-    document.getElementById("defaultOpen").click();
-
-    function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-</script>
 
 </html>

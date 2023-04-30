@@ -1,0 +1,5 @@
+Double checked navigation
+
+Removed problematic videos
+
+Added lots of artifacts
